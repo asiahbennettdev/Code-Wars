@@ -4,14 +4,14 @@ If the current number is even, you have to divide it by 2, otherwise,
 you have to subtract 1 from it. */
 
 var reduceZero  = function(num) {
- let number = 0;
+ let val = 0;
  while (num !== 0){
-   if (num % 2 == 0){
+   if (num % 2 === 0){
      num = num / 2;
-     number ++;
+     val ++;
    }else{
      num -=1;
-     number ++;
+     val ++;
    }
-  }return number
+ }return val
 };
